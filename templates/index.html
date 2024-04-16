@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-    <button id="btn">Show greeting</button>
-    <h class="hidden" id="hello">Hello World</h>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<link href="../static/css/style.css" rel="stylesheet">
 
-    <script src="../static/index.js"></script>
+</head> 
+<body>
+
+<div class="container">
+    <h1>Todo List</h1>
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Enter your todo here...">
+        <button id="todoSubmit">Add Todo</button>
+    </form>
+    <ul id="todoList"></ul>
+</div>
+
+<div id="overlay" class="hidden"></div>
+
+<div class="hidden" id="container">
+    <h1>Edit Todo</h1>
+    <form id="todoForm">
+        <input type="text" id="editInput" placeholder="Edit your todo here...">
+        <button id="editSubmit">Edit</button>
+    </form>
+</div>
+
+<script src="../static/index.js"></script>
 </body>
 </html>
